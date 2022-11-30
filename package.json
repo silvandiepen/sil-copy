@@ -1,13 +1,15 @@
 {
   "name": "@sil/copy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Copy to Clipboard",
   "main": "dist/index.js",
   "scripts": {
     "test": "test",
     "build": "tsup"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "author": "Sil van Diepen",
   "license": "MIT",
   "devDependencies": {
