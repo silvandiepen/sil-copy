@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "test",
-    "build": "tsup"
+    "build": "tsup",
+    "build:ts": "tsc --init"
   },
   "files": [
     "dist"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@types/node": "^18.11.9",
     "tsup": "^6.5.0",
+    "typescript": "^4.9.3",
     "vue": "^3.2.45"
   }
 }

@@ -5,7 +5,7 @@ interface Actions {
 
 export const copyText = (
   text: string,
-  actions: Actions = { success: () => {}, error: (err) => {} }
+  actions: Actions = { success: () => {}, error: (err:any) => {} }
 ) => {
   try {
     const tempInput = document.createElement("input");
@@ -16,7 +16,7 @@ export const copyText = (
     tempInput.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(tempInput.value);
     actions.success();
-  } catch (err) {
+  } catch (err: any) {
     actions.error(err);
   }
 };
